@@ -1,0 +1,25 @@
+<%= form_for(@pesee) do |f| %>
+  <% if @pesee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pesee.errors.count, "error") %> prohibited this pesee from being saved:</h2>
+
+      <ul>
+      <% @pesee.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :quand %><br />
+    <%= f.date_select :quand %>
+  </div>
+  <div class="field">
+    <%= f.label :combien %><br />
+    <%= f.text_field :combien %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

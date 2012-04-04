@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  quand: 2012-04-04
+  combien: 9.99
+
+two:
+  quand: 2012-04-04
+  combien: 9.99

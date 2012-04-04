@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Quand:</b>
+  <%= @pesee.quand %>
+</p>
+
+<p>
+  <b>Combien:</b>
+  <%= @pesee.combien %>
+</p>
+
+
+<%= link_to 'Edit', edit_pesee_path(@pesee) %> |
+<%= link_to 'Back', pesees_path %>
