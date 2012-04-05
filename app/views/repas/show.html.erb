@@ -1,0 +1,17 @@
+<h1>/Repa</h1>
+
+<p>
+  <b>Type</b><br>
+  <%= @repa.type %>
+</p>
+
+<p>
+  <b>Quand</b><br>
+  <%= @repa.quand %>
+</p>
+
+<div class="form-actions">
+  <%= link_to 'Back', repas_path, :class => 'btn'  %>
+  <%= link_to 'Edit', edit_repa_path(@repa), :class => 'btn' %>
+  <%= link_to 'Delete', repa_path(@repa), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+</div>

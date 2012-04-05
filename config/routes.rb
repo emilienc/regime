@@ -1,4 +1,6 @@
 Regime::Application.routes.draw do
+  resources :repas
+
   get "welcome/index"
 
   resources :sessions
